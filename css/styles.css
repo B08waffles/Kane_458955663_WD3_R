@@ -11,8 +11,12 @@ body {
     justify-content: center;
     height: 100%;
     margin: 0;
+    width:100%;
 }
 
+a {
+    font-size: large;
+}
 /* Use of SVG logo created in illustrator/inkscape include source file
 SVG scales in mediaquery still legible in mobile */
 fieldset img {
@@ -21,16 +25,19 @@ fieldset img {
     justify-content: center;
     position: relative;
     align-items: center;
-    left: 13px;
+    left: 50px;
 
 }
 
 form {
-    padding: 30px 40px;
+    padding: 30px 80px;
     background-color: rgb(60, 40, 83);
     margin-top: 2em;
+    margin-bottom: 2em;
     color: silver;
     border: 2px solid #3cb9ac;
+     
+    font-size: large;
 }
 
 fieldset {
@@ -38,6 +45,7 @@ fieldset {
     padding-bottom: 20px;
     position: relative;
     border-color: #2a9397;
+    padding: 6em;
 }
 
 fieldset label {
@@ -50,7 +58,7 @@ fieldset label {
 }
 
 div {
-    font-size: xx-small;
+    font-size: medium;
 }
 
 /* Layout demonstrates consistent width input fields */
@@ -79,12 +87,13 @@ legend {
     background-color: #e8e9eb;
     border-bottom: 1px solid #3cb9ac;
     padding: 20px 40px;
-    font-size: large;
+    font-size: xx-large;
     color: rgb(0, 0, 0);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     justify-self: center;
     justify-content: center;
-    margin-left: 15px;
+    margin-left: 35px;
+    margin-bottom: -55px;
 }
 
 .form-control small {
@@ -93,8 +102,13 @@ legend {
     left: 0;
 }
 
+span.hovertext {
+    font-size: large;
+}
+
 h6 {
     margin-bottom: -1px;
+    font-size: large;
 }
 
 .submit {
@@ -162,7 +176,7 @@ section:nth-of-type(8):after {
 
 /* Mediaquery remove labels in mobile view and set width 100% */
 /* Use display: grid and @mediaquery to remove the one input not required */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     body {
         width: 100%;
     }
@@ -171,6 +185,11 @@ section:nth-of-type(8):after {
         display: none;
     }
 
+    form  {
+        width: 100%;
+    }
+
+    
     .notrequired {
         display: grid;
         visibility: hidden;
@@ -256,6 +275,10 @@ a:hover~iframe {
     z-index: 1;
     left: 0;
     top: 110%;
+}
+
+section.form-control::after {
+    font-size:medium;
 }
 
 .hovertext:hover:before {
