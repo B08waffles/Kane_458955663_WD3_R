@@ -11,12 +11,13 @@ body {
     justify-content: center;
     height: 100%;
     margin: 0;
-    width:100%;
+    width: 100%;
 }
 
 a {
     font-size: large;
 }
+
 /* Use of SVG logo created in illustrator/inkscape include source file
 SVG scales in mediaquery still legible in mobile */
 fieldset img {
@@ -36,7 +37,7 @@ form {
     margin-bottom: 2em;
     color: silver;
     border: 2px solid #3cb9ac;
-     
+
     font-size: large;
 }
 
@@ -151,6 +152,7 @@ h6 {
 
 .form-control.success::after {
     content: "Correct";
+    color: green;
 }
 
 .form-control.error::after {
@@ -162,7 +164,7 @@ h6 {
     min-width: 35px;
     z-index: 1;
     clear: both;
-    margin-top: -60px;
+    margin-top: -69px;
     margin-left: 2px;
     height: 53px;
     border-radius: 3px 0 0 3px;
@@ -176,8 +178,8 @@ section:nth-of-type(8):after {
 
 /* Mediaquery remove labels in mobile view and set width 100% */
 /* Use display: grid and @mediaquery to remove the one input not required */
-@media only screen and (max-width: 900px) {
-    body {
+@media screen and (max-width: 900px) {
+    form {
         width: 100%;
     }
 
@@ -185,11 +187,9 @@ section:nth-of-type(8):after {
         display: none;
     }
 
-    form  {
-        width: 100%;
-    }
 
-    
+
+
     .notrequired {
         display: grid;
         visibility: hidden;
@@ -278,7 +278,7 @@ a:hover~iframe {
 }
 
 section.form-control::after {
-    font-size:medium;
+    font-size: medium;
 }
 
 .hovertext:hover:before {
