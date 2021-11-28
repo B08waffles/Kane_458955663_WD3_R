@@ -139,7 +139,7 @@ h6 {
 /* Use ::before or ::after pseudoelements to denote fields with required attribute */
 
 .form-control::after {
-    content: "Required*";
+    content: "";
     color: red;
     display: grid;
     font-size: large !important;
