@@ -186,10 +186,9 @@ section:nth-of-type(8):after {
     .form-control label {
         display: none;
     }
-
-
-
-
+    h6 {
+        display: none;
+    }
     .notrequired {
         display: grid;
         visibility: hidden;
