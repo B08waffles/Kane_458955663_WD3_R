@@ -32,7 +32,7 @@ function pwordValidation() {
     let pwordErrorDiv = document.getElementById("pword-error")
 
     if (pword.value.match(pwordPattern)) {
-        pwordErrorDiv.innerHTML = "Correct: Valid Password"
+        pwordErrorDiv.innerHTML = "Valid Password"
         setSuccessFor(pword)
     } else {
         pwordErrorDiv.innerHTML = "Error - please enter a valid password"
@@ -47,7 +47,7 @@ function fnameValidation() {
     let fnameErrorDiv = document.getElementById("fname-error")
 
     if (fname.value.match(fnamePattern)) {
-        fnameErrorDiv.innerHTML = "Correct: Valid first name"
+        fnameErrorDiv.innerHTML = "Valid first name"
         setSuccessFor(fname)
     } else {
         fnameErrorDiv.innerHTML = "Error, please enter your first name"
